@@ -50,7 +50,7 @@ const Header = () => {
                     <Link to="/womenproducts">Women Products</Link>
                     </li>
                     <li>
-                    <Link to="/kidproducts">kids Products</Link>
+                    <Link to="/kidproducts" >kids Products</Link>
                     </li>
                 </div>
            </div> 

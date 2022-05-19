@@ -11,7 +11,7 @@ const DataProvider = (props) => {
     const [products, setProducts] = useState([
         {
             "_id": "1",
-            "title": "Shoes Product 01",
+            "title": "Power - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/820-6006-_2_2400x.jpg?v=1643349152",
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/820-6006-_1_2400x.jpg?v=1643349152",
@@ -23,11 +23,12 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 107,
-            "count":1
+            "count":1,
+            "category":"Men"
         },
         {
             "_id": "2",
-            "title": "Shoes Product 02",
+            "title": "NorthStar - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-5418-_2_2400x.jpg?v=1650434487",
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-5418-_1_2400x.jpg?v=1650434487", 
@@ -38,11 +39,12 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 104,
-            "count":1
+            "count":1,
+            "category":"Men"
         },
         {
             "_id": "3",
-            "title": "Shoes Product 03",
+            "title": "Bata 3D Energy - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/820-9002-_2_2400x.jpg?v=1643349308",
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/820-9002-_1_2400x.jpg?v=1643349308",
@@ -54,11 +56,12 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 103,
-            "count":1
+            "count":1,
+            "category":"Men"
         },
         {
             "_id": "4",
-            "title": "Shoes Product 04",
+            "title": "Skechers - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-9410-_2_2400x.jpg?v=1650434728",
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-9410-_1_2400x.jpg?v=1650434727",
@@ -70,11 +73,12 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 104,
-            "count":1
+            "count":1,
+            "category":"Men"
         },
         {
             "_id": "5",
-            "title": "Shoes Product 05",
+            "title": "NorthStar - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-3420-_2_2400x.jpg?v=1650434333",
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-3420-_1_2400x.jpg?v=1650434333",
@@ -86,11 +90,12 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 105,
-            "count":1
+            "count":1,
+            "category":"Men"
         },
         {
             "_id": "6",
-            "title": "Shoes Product 06",
+            "title": "Power - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-9411-_2_2400x.jpg?v=1650434758",
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-9411-_1_2400x.jpg?v=1650434758",
@@ -102,12 +107,13 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 106,
-            "count":1
+            "count":1,
+            "category":"Men"
         }
         ,
         {
             "_id": "7",
-            "title": "Shoes Product 07",
+            "title": "Bata 3D Energy - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-5416-_2_2400x.jpg?v=1650434457",
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-5416-_1_2400x.jpg?v=1650434457",
@@ -119,11 +125,12 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 107,
-            "count":1
+            "count":1,
+            "category":"Men"
         },
         {
             "_id": "8",
-            "title": "Shoes Product 08",
+            "title": "Power - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-6416-_2_2400x.jpg?v=1650434610",
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/848-6416-_1_2400x.jpg?v=1650434610",
@@ -135,11 +142,12 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 108,
-            "count":1
+            "count":1,
+            "category":"Men"
         },
         {
             "_id": "9",
-            "title": "Shoes Product 09",
+            "title": "Power - Men",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/828-6101-_2_2400x.jpg?v=1647947351",
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/828-6101-_3_2400x.jpg?v=1647947352",
@@ -150,7 +158,78 @@ const DataProvider = (props) => {
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
             "price": 109,
-            "count":1
+            "count":1,
+            "category":"Men"
+        },
+
+        {
+            "_id": "10",
+            "title": "Justice League - Kids",
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/151-9024-_2_2400x.jpg?v=1637318030",
+                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/151-9024-_1_2400x.jpg?v=1637318029",
+                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/151-9024-_3_2400x.jpg?v=1637318030",
+                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/151-9024-_4_2400x.jpg?v=1637318030"
+
+                ],
+            "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
+            "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+            "colors": ["red", "black", "teal"],
+            "sizes": ["XL", "L", "M", "XM", "LX"],
+            "price": 106,
+            "count":1,
+            "category":"kids"
+        }
+        ,
+        {
+            "_id": "11",
+            "title": "Justice League - Kids",
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-6039-_2_2400x.jpg?v=1638528987",
+                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-6039-_1_2400x.jpg?v=1638528987",
+                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-6039-_3_2400x.jpg?v=1638528987",
+                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-6039-_4_2400x.jpg?v=1638528987"
+                ],
+            "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
+            "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+            "colors": ["red", "black", "teal"],
+            "sizes": ["XL", "L", "M", "XM", "LX"],
+            "price": 107,
+            "count":1,
+            "category":"kids"
+        },
+        {
+            "_id": "12",
+            "title": "Bubble Gummers - Boys",
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-6057-_2_2400x.jpg?v=1637317727",
+                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-6057-_1_2400x.jpg?v=1637317727",
+                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-6057-_3_2400x.jpg?v=1637317727",
+                    "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-6057-_4_2400x.jpg?v=1637317727"
+                ],
+            "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
+            "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+            "colors": ["red", "black", "teal"],
+            "sizes": ["XL", "L", "M", "XM", "LX"],
+            "price": 108,
+            "count":1,
+            "category":"kids"
+        },
+        {
+            "_id": "13",
+            "title": "Justice League - Kids",
+            "images": [
+                "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-9032-_2_2400x.jpg?v=1638529022",
+                "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-9032-_1_2400x.jpg?v=1638529022",
+                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/351-9032-_4_2400x.jpg?v=1638529022"
+            ],
+            "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
+            "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+            "colors": ["red", "black", "teal"],
+            "sizes": ["XL", "L", "M", "XM", "LX"],
+            "price": 109,
+            "count":1,
+            "category":"kids"
         }
 
 

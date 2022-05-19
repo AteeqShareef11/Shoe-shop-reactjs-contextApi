@@ -10,7 +10,8 @@ const Products = () => {
 
  const value = useContext(DataContext)
  const [products]=value.products
- const [cart,setCart]=value.cart;
+ const [cart,setCart]=value.cart
+ const[price,setPrice]=useState("")
  const [index, setIndex] = useState(0);
  const addCart = value.addCart
  const searchProducts = value.searchProducts
@@ -37,18 +38,18 @@ const Products = () => {
   const searchHandle = (e) =>{
     const data = e.target.value;
     setInput(data)
-   console.log("input text",input)
-   console.log("title text",products.title)
+  //  console.log("input text",input)
+  //  console.log("title text",products.title)
     if(input !== ""){
       const filterData =  products.filter((product) => {
         return  (product.title.toLowerCase()).includes(input.toLowerCase());
      });
      setSearchres(filterData)
-     console.log("search result if",searchres)  
+    //  console.log("search result if",searchres)  
         
     } else{
       setSearchres(products)
-      console.log("search result else",searchres)  
+      // console.log("search result else",searchres)  
     }
 
     setSearchres(products)
@@ -69,11 +70,31 @@ const Products = () => {
   
 
   }
-   const lth =(s)=>{
- console.log("click me")
- const sort = products.sort((a,b)=> (a.price > b.price ? 1 : -1))
- console.log("sort", sort)
+   const sortHandler =(s)=>{
+   console.log("click me")
+   const valueOFselect = s.target.value
+  
+   setPrice(valueOFselect)
+   console.log("price",price)
+   console.log("select value",valueOFselect)
+   if(valueOFselect === "low to high" ){
+      const sort = products.sort((a,b)=> (a.price > b.price ? 1 : -1))
+      console.log("sort", sort)
+ }
  
+ else if(valueOFselect === "high to low"){
+    const sort = products.sort((a,b)=> (a.price > b.price ? -1 : 1))
+          console.log("sort", sort)
+ }
+ else if(valueOFselect === "alphabatic A-Z"){
+  const sort = products.sort((a,b)=> (a.title > b.title ? 1 : -1))
+        console.log("sort", sort)
+}
+else if(valueOFselect === "alphabattic Z-A"){
+  const sort = products.sort((a,b)=> (a.title > b.title ? -1 : 1))
+        console.log("sort", sort)
+}
+
   }
 
 
@@ -88,11 +109,12 @@ const Products = () => {
     </div>
       <div>
            <label for="sortby">Sort By:</label>
-            <select  name="sortby" id="sortby">
-              <option value="" onClick={lth} >Low To High</option>
-              <option value="">High To Low</option>
-              <option value="">Alphatic A-Z</option>
-              <option value="">Alphatic Z-A</option>
+            <select onChange={sortHandler}  name="sortby" id="sortby">
+            <option value="sort from">Sort From</option>
+              <option value="low to high">Low To High</option>
+              <option value="high to low">High To Low</option>
+              <option value="alphabatic A-Z">Alphatic A-Z</option>
+              <option value="alphabattic Z-A">Alphatic Z-A</option>
             </select>
       </div>
     </div>
