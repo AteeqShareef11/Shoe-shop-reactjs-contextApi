@@ -14,10 +14,8 @@ const Products = () => {
  const[price,setPrice]=useState("")
  const [index, setIndex] = useState(0);
  const addCart = value.addCart
- const searchProducts = value.searchProducts
- const searchProductsNot=value.searchProductsNot
  const [input,setInput]= useState("")
- const [searchres,setSearchres]=useState([])
+ const [filterFn,setFilterFn]=useState({fn: items=>{return items;}})
 
  console.log("title text",products.title)
 
@@ -34,42 +32,23 @@ const Products = () => {
      setCart([...cart])
     }
   
-  }
-  const searchHandle = (e) =>{
-    const data = e.target.value;
-    setInput(data)
-  //  console.log("input text",input)
-  //  console.log("title text",products.title)
-    if(input !== ""){
-      const filterData =  products.filter((product) => {
-        return  (product.title.toLowerCase()).includes(input.toLowerCase());
-     });
-     setSearchres(filterData)
-    //  console.log("search result if",searchres)  
-        
-    } else{
-      setSearchres(products)
-      // console.log("search result else",searchres)  
-    }
-
-    setSearchres(products)
-    
+  } 
 
  
+  const searchHandle = (e) =>{
+    let inputValue = e.target.value;
+    console.log("inputValue",inputValue)
+    setFilterFn({
+      fn: items=>{
+        if(inputValue === "")
+        return items
+        else
+        return items.filter(x=> x.title.toLowerCase().includes(inputValue))
+      }
+    })
   
-    // console.log("input enter",input)
-    // console.log('filterdata==',filterData)
-    // const prod = products
-  //  if(filterData.length === 0){
-  //   searchProductsNot(prod)
-  //   console.log("productsall",prod)
-  //    console.log("leth.products=> 0")
-  //  }else {
-  //   searchProducts(filterData);
-  //  }
-  
-
   }
+
    const sortHandler =(s)=>{
    console.log("click me")
    const valueOFselect = s.target.value
@@ -103,6 +82,7 @@ else if(valueOFselect === "alphabattic Z-A"){
 
   return (
     <>
+ 
     <div className='search'>
     <div className='product-input'>
       <input type="text" placeholder="Search From Here" onChange={searchHandle}/>
@@ -123,7 +103,7 @@ else if(valueOFselect === "alphabattic Z-A"){
     
 
 
-        products.map(product=>(
+      filterFn.fn(products).map(product=>(
                <div className='card' key={product._id}>
                    <Link to ={`/detailproduct/${product._id}`}>
                        <img src={product.images[index]} alt='' className='images'/>

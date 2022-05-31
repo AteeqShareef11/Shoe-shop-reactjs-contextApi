@@ -256,7 +256,7 @@ const DataProvider = (props) => {
         },
         {
             "_id": "11",
-            "title": "Marie Claire - Women",
+            "title": "Claire Claire - Women",
             "images": [
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/670-8232-_2_2400x.jpg?v=1650276307",
                 "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/670-8232-_1_2400x.jpg?v=1650276307",
@@ -272,7 +272,7 @@ const DataProvider = (props) => {
         },
         {
             "_id": "12",
-            "title": "Marie Claire - Women",
+            "title": "Bpnzi Claire - Women",
             "images": [
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/770-3002-_2_2400x.jpg?v=1650269694",
                   "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/770-3002-_1_2400x.jpg?v=1650269694",
@@ -288,7 +288,7 @@ const DataProvider = (props) => {
         },
         {
             "_id": "13",
-            "title": "Marie Claire - Women",
+            "title": "Gentizia Claire - Women",
             "images": [
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/670-7254-_2_2400x.jpg?v=1650269546",
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/670-7254-_1_2400x.jpg?v=1650269546",
@@ -320,7 +320,7 @@ const DataProvider = (props) => {
         },
         {
             "_id": "15",
-            "title": "Marie Claire - Women",
+            "title": "Farie  - Women",
             "images": [
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/670-6235-_2_2400x.jpg?v=1650269405",
                  "https://cdn.shopify.com/s/files/1/0143/1552/0054/products/670-6235-_1_2400x.jpg?v=1650269405",
