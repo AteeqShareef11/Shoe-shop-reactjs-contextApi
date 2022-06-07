@@ -367,15 +367,7 @@ const DataProvider = (props) => {
         }
 
     }
-    const searchProductsNot =(arrNot)=>{
-       setProducts(products);
-    }
-    const searchProducts=(filterArr)=>{
-     console.log('fileters array in dataprovider.js==>',filterArr)
-     setProducts(filterArr);
 
-     
-    }
 
     useEffect(() => {
         const dataCart=JSON.parse(localStorage.getItem('dataCart'))
@@ -393,8 +385,7 @@ const DataProvider = (props) => {
      cart:[cart,setCart],
      addCart:addCart,
      addCartW:addCartW,
-     searchProducts:searchProducts,
-     searchProductsNot:searchProductsNot
+
 
     }
   return (
